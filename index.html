@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Task Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 2rem auto; padding: 1rem; }
+        .controls { margin-bottom: 1rem; }
+        .filters button { margin-right: 5px; cursor: pointer; }
+        li { margin-bottom: 0.5rem; display: flex; justify-content: space-between; }
+        .done { text-decoration: line-through; color: gray; }
+    </style>
+</head>
+<body>
+    <h1>Task Tracker</h1>
+    
+    <div class="controls">
+        <input type="text" id="task-input" placeholder="What needs to be done?">
+        <button id="add-btn">Add Task</button>
+    </div>
+
+    <div class="filters">
+        <button id="filter-all">All</button>
+        <button id="filter-todo">To Do</button>
+        <button id="filter-done">Done</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <!-- This loads your compiled JavaScript as a module -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
